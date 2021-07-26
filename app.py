@@ -3,11 +3,11 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-
+from flask import redirect
+from model import location
 
 # -- Initialization section --
 app = Flask(__name__)
-
 
 # -- Routes section --
 @app.route('/')
@@ -20,6 +20,8 @@ def donate():
     if request.method == 'GET':
         return render_template('index.html')
     else:
-        query = request.form('location')
+        query = request.form['location']
         print(query)
+        address = location(query)
+        print(address)
         return render_template('results.html')
