@@ -25,8 +25,9 @@ def donate():
     if request.method == 'GET':
         return render_template('index.html')
     else:
-        query = request.form('location')
+        query = request.form['location']
         print(query)
+        location(query)
         return render_template('results.html')
      
         
