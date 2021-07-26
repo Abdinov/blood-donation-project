@@ -1,7 +1,9 @@
-
 import requests
 
 def location(query):
-    endpoint = "https://dev.virtualearth.net/REST/v1/LocalSearch/?query={query}&userLocation={point}&key={Asu_IrTxezA_IbYyg0yFSIrm-9lUaRx8ndlEBciPABl05_j7zzt3RiQy-6gyc_xQ}"
+    endpoint = f"http://dev.virtualearth.net/REST/v1/Locations/US/WA/98052/Redmond/1%20Microsoft%20Way?o=json&key=ArYtgpC--9RSfpY3gyjgKhRhx6fCVwDNd_2D850Y8iEYWng7HPoOSo_4cUOKMysY"
+    #response = requests.get(endpoint).json()
     response = requests.get(endpoint).json()
-    return response
+    address = response['resourceSets'][0]['resources'][0]['point']['coordinates']
+    print(address)
+    return "hello"
