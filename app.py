@@ -24,7 +24,6 @@ def donate():
         print(query)
         address = location(query)
         print(address)
-        print("hello")
         return render_template('results.html')
 
     
