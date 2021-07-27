@@ -1,13 +1,29 @@
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-      
-    <h3><a href="https://donate.nybc.org/donor/schedules/center/96">Grand Central Donor Center</a></h3>
+<div class="event-list">
+    <ul>
+        {% for i in lst %}
+        <li>{{ i['name'] }} - {{ i['Address']['formattedAddress'] }} - {{i['Website']}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+
+
+
+<!-- <div class="card" style="width: 18rem;">
+  <div class="card-body"> -->
+
+
+
+
+<!-- <h3><a href="https://donate.nybc.org/donor/schedules/center/96">Grand Central Donor Center</a></h3>
 ​
      <h5 class="card-title">Grand Central Donor Center</h5> 
     <h4 class="card-subtitle mb-2 text-muted">Chanin Building </h4>
      <h6 class="card-subtitle mb-2 text-muted">115 East 41st Street NEW YORK, NY 10017 </h6>
-     
-     <a href="#" class="card-link">Card link</a>
+      -->
+<!-- <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a> 
   </div>
-</div>
+</div> -->
