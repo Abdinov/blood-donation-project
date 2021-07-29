@@ -6,6 +6,7 @@ from flask import request
 from flask import redirect
 from model import location
 from model import destination
+from datetime import datetime
 
 # -- Initialization section --
 app = Flask(__name__)
@@ -16,7 +17,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', time=datetime.now())
 
 
 @app.route('/donate', methods=['GET', 'POST'])
@@ -29,6 +30,6 @@ def donate():
         lst = destination(coordinates)
         # print(lst)
         # print(query)
-        address = location(query)
+        #address = location(query)
         # print(address)
-    return render_template('results.html', lst = lst)
+    return render_template('results.html', lst = lst, time=datetime.now())
