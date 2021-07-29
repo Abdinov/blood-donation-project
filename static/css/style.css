@@ -2,17 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Zen+Loop&display=swap');
 
-h1 {
+/* h1 {
     font-family:'Josefin Sans', sans-serif;
     padding:20px;    
     text-align: center;
     font-weight:300;
     text-shadow: 5px 5px 5px red;
     font-size:45px;
+} */
+
+#tabs {
+    margin:0 auto;
+    width: 75%;
+    height:auto;
+    border-radius: 5px, ;
+    padding-top: 30px;
 }
 
-form {
-    text-align: center;
-    color: red;
-    
+#navbar-container {
+    padding: 1px;
+    border-style: double;
+    border-radius: 10px, 10px;
+}
+
+#navbar {
+    background-color: rgb(204, 0, 0);
+}
+
+#tabContent {
+    padding-top: 0px;
+}
+
+#search-form {
+    align-self: center;
+    margin-top: auto;
 }
