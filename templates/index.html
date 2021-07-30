@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--Import bootstrap.css here using the CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,7 +21,12 @@
                 </a>
                 <form class="row g-3" method="post" action="/donate" id="search-form">
                     <div class="col-auto">
-                        <input name="location" class="form-control" type="search" placeholder="Enter Your Zipcode">
+                        <label style="color: white; margin: auto; font-size: 20px;">
+                            Find a Blood Donation Center
+                        </label>
+                    </div>
+                    <div class="col-auto">
+                        <input name="location" class="form-control" type="search" placeholder="Enter your zipcode">
                     </div>
                     <div class="col-auto">
                         <button type="submit" class="btn btn-outline-dark mb-3">Search</button>
@@ -60,43 +66,45 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-why-donate" role="tabpanel"
                 aria-labelledby="pills-why-donate-tab">
-                <div class="row">
-                    <div class="col">
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oZwtv9IJH6A"
-                            id="yt-imbed">
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                            picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="col">
-                        <p> According to <a href="https://www.uchicagomedicine.org/give/give-blood">University of
-                                Chicago Medecine</a>,
-                            about one in seven people entering a hospital needs blood, and blood is needed every two
-                            seconds.
-                            More than 4.5 million Americans will a need blood transfusion each year.
-                            It cannot be manufactured or replaced with a different substance. Individuals who are
-                            accident victims,
-                            surgery patients, hemophiliacs, or cancer patients depend on a sufficient supply of
-                            blood in hospitals.
-                            Donating blood is a moral duty of every citizen, especially because Only 37 percent of
-                            the U.S. population is
-                            eligible to donate blood — less than 10 percent do annually. Those who can donate can
-                            save
-                            lives that otherwise will be lost to a depleted of blood.
-                        </p>
-                    </div>
+                <div class="container">
+                    <iframe id="yt-why" width="1056" height="500" src="https://www.youtube-nocookie.com/embed/oZwtv9IJH6A"
+                        id="yt-imbed">
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                        picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="container">
+                    <p style="padding-top: 30px;">
+                        According to <a href="https://www.uchicagomedicine.org/give/give-blood" style="color: black">
+                            the University of Chicago Medicine</a>
+                        , about one in seven people entering a hospital needs
+                        blood, and blood is needed every two seconds. More than 4.5 million Americans will need blood
+                        transfusion each year. It cannot be manufactured or replaced with a different substance.
+                        Individuals who are accident victims, surgery patients, hemophiliacs, or cancer patients depend
+                        on a sufficient supply of blood in hospitals. Donating blood is a moral duty of every citizen,
+                        especially because Only 37 percent of the U.S. population is eligible to donate blood — less
+                        than 10 percent do it annually. Those who can donate can save lives that otherwise will be lost
+                        to a depleted blood supply.
+
+                    </p>
                 </div>
             </div>
+
             <div class="tab-pane fade" id="pills-benefits" role="tabpanel" aria-labelledby="pills-benefits-tab">
-                <p>Donating blood can have both positive emotional and physical effects on the donor.
+
+                <p>
+                    Donating blood can have both positive emotional and physical effects on the donor.
                     A blood donor makes an act of altruism, which can ultimately help to save a
                     patient's life.
                     According to a report by the <a
-                        href="https://www.mentalhealth.org.uk/publications/doing-good-altruism-and-wellbeing-age-austerity">Mental
+                        href="https://www.mentalhealth.org.uk/publications/doing-good-altruism-and-wellbeing-age-austerity"
+                        style="color: black">Mental
                         Health Foundation</a>,
-                    altruism can help to:</p>
+                    altruism can help to:
+                </p>
+
                 <ul>
                     <li>Reduce stress</li>
                     <li>Improve your emotional well-being</li>
@@ -104,26 +112,52 @@
                     <li>Help get rid of negative feelings</li>
                     <li>Provide a sense of belonging and reduce isolation</li>
                 </ul>
-                <p>Additionally, giving blood can reduce harmful iron stores in people who suffer
-                    hemochromatosis.
-                    One in every two hundred people in the U.S. is affected by this condition which
-                    causes an iron overload.
-                    High levels of iron can lead to cancer, heart attacks, or problems associated with
-                    the liver; donating blood can
-                    help to prevent all of the following diseases caused by high iron levels.
-                    Another benefit of donating your blood is getting your heart into a better shape.
-                    Donating lowers the viscosity of your blood which reduces the friction on your
-                    arteries and blood vessels. </p>
+
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col-6">
+                        <iframe id="yt-benefits" width="506" height="400"
+                            src="https://www.youtube-nocookie.com/embed/FvG7MyDsEjg" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-6" style="margin-top: 1cm;">
+                        <p>
+                            Additionally, giving blood can reduce harmful iron stores in people who suffer
+                            hemochromatosis.
+                            One in every two hundred people in the U.S. is affected by this condition which
+                            causes an iron overload.
+                            High levels of iron can lead to cancer, heart attacks, or problems associated with
+                            the liver; donating blood can
+                            help to prevent all of the following diseases caused by high iron levels.
+                            Another benefit of donating your blood is getting your heart into better shape.
+                            Donating lowers the viscosity of your blood which reduces the friction on your
+                            arteries and blood vessels. Watch an interview with David DeRose, MD, to learn more about
+                            the benefits of blood donation.
+                        </p>
+                    </div>
+                </div>
             </div>
+
             <div class="tab-pane fade" id="pills-shortage" role="tabpanel" aria-labelledby="pills-shortage-tab">
+
                 <p> In November 2019, the Red Cross issued an immediate call for blood donations due to
                     a severe blood shortage.
-                    This is not the first and not the last time.At one point, when the COVID-19 pandemic
+                    This is not the first and not the last time. At one point, when the COVID-19 pandemic
                     was at its peak in the U.S.,
                     33 percent of hospitals had just a day's supply of blood on their shelves to handle
                     the needs of
-                    their patients and zero hospitals have it for more than three days.</p>
-                <p>The fundamental reason for the crisis is not just a decline in the frequency of
+                    their patients and zero hospitals have it for more than three days. To learn more about the
+                    shortages during COVID-19 pandemic, you can watch the video below.
+                </p>
+
+                <iframe id="yt-covid" width="1056" height="450" src="https://www.youtube-nocookie.com/embed/kWDslmbJITc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <p style="padding-top: 30px;">
+                    The fundamental reason for the crisis is not just a decline in the frequency of
                     donors. There has been a decline in the number of donors too.
                     What started as a civic duty-driven phenomenon, has changed into more of an
                     "individual transformational impact".
@@ -132,21 +166,22 @@
                     The industry is also seeing a decline because there isn't enough awareness being
                     created to reach out to
                     and keep existing younger donors, the millennials. This is why you need to become a
-                    donor.</p>
+                    donor.
+                </p>
             </div>
             <div class="tab-pane fade" id="pills-faq" role="tabpanel" aria-labelledby="pills-faq-tab">
                 <h6>What to do before donating blood?</h6>
                 <ul>
                     <li>Select a donation type and find a convenient time that works best for you.</ui>
                     <li>Have iron-rich foods, such as red meat, fish, poultry, beans, spinach,
-                        iron-fortified cereals or raisins</ui>
+                        iron-fortified cereals, or raisins</ui>
                     <li>Get a good night's sleep the night before your donation, eat healthy foods and
                         drink extra liquids</ui>
                     <li>Avoid exercise or strenuous activities</ui>
                 </ul>
                 <h6>What to do after donating blood?</h6>
                 <ul>
-                    <li>Stay in a refreshments area for 15-20 minutes and enjoy a cool drink and savoury
+                    <li>Stay in a refreshments area for 15-20 minutes and enjoy a cool drink and savory
                         snack</ui>
                     <li>Drink plenty of fluids</ui>
                     <li>Don’t stand for long periods</ui>
@@ -159,14 +194,13 @@
                 <p>Some of the side effects of donating blood include:</p>
                 <ul>
                     <li>Bruising</ui>
-                    <li>Dzziness, lightheadedness, and nausea</ui>
+                    <li>Dizziness, lightheadedness, and nausea</ui>
                     <li>Physical weakness</ui>
                     <li>Pain in the arm</ui>
                 </ul>
                 <p>
-                    However, all of the above side effects are temporary, and fade away after some time.
-                    These side effects are nothing compared to the good - saving someone's life - that
-                    is being done with donating blood.
+                    However, all of the above side effects are temporary and fade away after some time.
+                    These side effects are nothing compared to the good that's being done by donating blood.
                 </p>
             </div>
         </div>
@@ -182,23 +216,29 @@
             <div class="row py-4 d-flex align-items-center">
                 <div class="col-6">
                     <p>
-                        This website was built by Farrukh and Kelvin (Morgan Stanley Cohort) during FinTech Focus program.
-                        Special thanks to the FTF's sponsors - Morgan Stanley, Wells Fargo, Bank of America, JP Morgan Chase & Co, and Goldman Sachs.
+                        This website was built by Farrukh and Kelvin (Morgan Stanley Cohort) during FinTech Focus
+                        program.
+                        Special thanks to the FTF's sponsors - Morgan Stanley, Wells Fargo, Bank of America, JP Morgan
+                        Chase & Co, and Goldman Sachs.
                         Additional thanks to Steven, Erin, and Farhan from UpperLine Code.
                     </p>
                 </div>
                 <div class="col-3">
                     <h6>Farrukh Abdinov</h6>
-                    <a href="https://www.linkedin.com/in/farrukh-abdinov/"><i class="fab fa-linkedin" style="font-size:60px;color:white; padding-right: 10px;"></i></a>
-                    <a href="https://github.com/Abdinov"><i class="fab fa-github" style="font-size:60px;color:white;"></i></a>
+                    <a href="https://www.linkedin.com/in/farrukh-abdinov/"><i class="fab fa-linkedin"
+                            style="font-size:60px;color:white; padding-right: 10px;"></i></a>
+                    <a href="https://github.com/Abdinov"><i class="fab fa-github"
+                            style="font-size:60px;color:white;"></i></a>
                 </div>
                 <div class="col-3">
                     <h6>Kelvin Nah</h6>
-                    <a href="https://www.linkedin.com/in/kelvin-nah-22a5a8196/"><i class="fab fa-linkedin " style="font-size:60px;color:white; padding-right: 10px;"></i></a>
-                    <a href="https://github.com/kelvinnah1"><i class="fab fa-github" style="font-size:60px; color:white;"></i></a>
+                    <a href="https://www.linkedin.com/in/kelvin-nah-22a5a8196/"><i class="fab fa-linkedin "
+                            style="font-size:60px;color:white; padding-right: 10px;"></i></a>
+                    <a href="https://github.com/kelvinnah1"><i class="fab fa-github"
+                            style="font-size:60px; color:white;"></i></a>
                 </div>
             </div>
-        </div>        
+        </div>
     </footer>
 
 </body>
